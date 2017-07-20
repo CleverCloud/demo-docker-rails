@@ -6,6 +6,7 @@ cd $HOME
 sed -i "s/# gem 'therubyracer'/gem 'therubyracer'/" Gemfile
 
 bundle config path "$HOME/bundler"
+bundle update rails
 bundle install
 
 ./bin/rake db:migrate
